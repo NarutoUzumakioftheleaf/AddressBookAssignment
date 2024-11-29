@@ -10,7 +10,7 @@ public class Main {
             System.out.println("Enter 1 to create contact");
             int userInput = sc.nextInt();
             switch (userInput) {
-                case 1 -> create();
+                case 1 -> create(a1);
                 default -> System.out.println("Wrong Input");
             }
             System.out.println("Enter 0 to exit");
@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Thankyou for using address book");
         sc.close();
     }
-        static void create(){
+        static void create(AddBook a1){
             Scanner sc=new Scanner(System.in);
             System.out.println("Enter First Name");
             String f=sc.next();
@@ -39,6 +39,7 @@ public class Main {
             String e=sc.next();
             Contacts c1=new Contacts();
             c1.createContact(f,l,a,c,s,z,x,e);
+            a1.addContact(c1);
 
 
 
