@@ -20,4 +20,19 @@ public class Contacts {
         this.email=e;
 
     }
+
+
+    @Override
+    public String toString() {
+        return "Contacts{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", Address='" + Address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zip='" + zip + '\'' +
+                ", phone_number=" + phone_number +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }

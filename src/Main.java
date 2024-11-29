@@ -7,10 +7,11 @@ public class Main {
         int i = 1;
         Scanner sc = new Scanner(System.in);
         do {
-            System.out.println("Enter 1 to create contact");
+            System.out.println("Enter 1 to create contact or 2 to display all contacts");
             int userInput = sc.nextInt();
             switch (userInput) {
-                case 1 -> create(a1);
+                case 1 -> a1.create();
+                case 2->  a1.display();
                 default -> System.out.println("Wrong Input");
             }
             System.out.println("Enter 0 to exit");
@@ -19,32 +20,6 @@ public class Main {
         System.out.println("Thankyou for using address book");
         sc.close();
     }
-        static void create(AddBook a1){
-            Scanner sc=new Scanner(System.in);
-            System.out.println("Enter First Name");
-            String f=sc.next();
-            System.out.println("Enter Last Name");
-            String l=sc.next();
-            System.out.println("Enter Address");
-            String a=sc.next();
-            System.out.println("Enter City");
-            String c=sc.next();
-            System.out.println("Enter State");
-            String s=sc.next();
-            System.out.println("Enter Zip");
-            String z=sc.next();
-            System.out.println("Enter Phone Number");
-            int x=sc.nextInt();
-            System.out.println("Enter email");
-            String e=sc.next();
-            Contacts c1=new Contacts();
-            c1.createContact(f,l,a,c,s,z,x,e);
-            a1.addContact(c1);
-
-
-
-
-        }
 
 
 
