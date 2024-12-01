@@ -42,6 +42,21 @@ public void editContact(){
     }
 
 }
+public void deleteContact(){
+    boolean found =false;
+    Scanner sc=new Scanner(System.in);
+    String name=sc.next();
+    for(Contacts c: Book){
+        if(c.getFirstName().equalsIgnoreCase(name)){
+            found =true;
+            Book.remove(c);
+            break;
+        }
+    }
+    if(!found){
+        System.out.println("Contact not found");
+    }
+}
 
 
 

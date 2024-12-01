@@ -13,6 +13,7 @@ public class Main {
                 case 1 -> a1.create();
                 case 2->  a1.display();
                 case 3->a1.editContact();
+                case 4->a1.deleteContact();
                 default -> System.out.println("Wrong Input");
             }
             System.out.println("Enter 0 to exit");
