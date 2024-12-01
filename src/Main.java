@@ -7,7 +7,7 @@ public class Main {
         int i = 1;
         Scanner sc = new Scanner(System.in);
         do {
-            System.out.println("Enter 1 to create contact or 2 to display all contacts or 3 to update contact details");
+            System.out.println("Enter 1 to create contact or 2 to display all contacts or 3 to update contact details or 4 to delete");
             int userInput = sc.nextInt();
             switch (userInput) {
                 case 1 -> a1.create();

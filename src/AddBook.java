@@ -44,6 +44,7 @@ public void editContact(){
 }
 public void deleteContact(){
     boolean found =false;
+    System.out.println("Enter name to delete its contact details");
     Scanner sc=new Scanner(System.in);
     String name=sc.next();
     for(Contacts c: Book){
